@@ -1,6 +1,5 @@
-import { HttpFS } from "./HttpFS";
-import { IReadFS } from "./IReadFS";
-import { ReadFS } from "./ReadFS";
+import { IReadFS } from './IReadFS';
+import { ReadFS } from './ReadFS';
 
 export class FS
 {
