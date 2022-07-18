@@ -1,10 +1,6 @@
-import '@feng3d/event';
-
-export { };
-
-declare global
+namespace feng3d
 {
-    interface MixinsGlobalEvents
+    export interface MixinsGlobalEvents
     {
         /**
          * 删除文件

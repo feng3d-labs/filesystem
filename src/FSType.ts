@@ -1,9 +1,13 @@
-/**
- * 文件系统类型
- */
-export enum FSType
+namespace feng3d
 {
-    http = 'http',
-    native = 'native',
-    indexedDB = 'indexedDB'
+
+    /**
+     * 文件系统类型
+     */
+    export enum FSType
+    {
+        http = 'http',
+        native = 'native',
+        indexedDB = 'indexedDB'
+    }
 }
