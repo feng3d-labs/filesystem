@@ -15,13 +15,13 @@
     },
     "references": [
         {
-            "path": "../event/tsconfig.json"
+            "path": "../event"
         },
         {
-            "path": "../polyfill/tsconfig.json"
+            "path": "../polyfill"
         },
         {
-            "path": "../task/tsconfig.json"
+            "path": "../task"
         },
     ],
     "files": [
