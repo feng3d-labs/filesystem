@@ -299,7 +299,7 @@ namespace feng3d
                 {
                     const result = (event.target as any).result;
 
-                    callback && callback(result !== null ? null : new Error(`没有找到资源 ${key}`), result);
+                    callback && callback(result !== undefined ? null : new Error(`没有找到资源 ${key}`), result);
                     request.onsuccess = null;
                 };
             });
