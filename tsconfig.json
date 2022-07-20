@@ -13,15 +13,11 @@
         ],
         "outFile": "dist/index.js"
     },
-    "references": [
-        {
-            "path": "../task"
-        },
-    ],
     "files": [
         //
         "../event/index.d.ts",
         "../polyfill/index.d.ts",
+        "../task/index.d.ts",
         //
         "src/global.ts",
         "src/FS.ts",
