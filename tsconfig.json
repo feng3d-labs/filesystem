@@ -15,15 +15,13 @@
     },
     "references": [
         {
-            "path": "../polyfill"
-        },
-        {
             "path": "../task"
         },
     ],
     "files": [
         //
         "../event/index.d.ts",
+        "../polyfill/index.d.ts",
         //
         "src/global.ts",
         "src/FS.ts",
