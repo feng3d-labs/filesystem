@@ -15,9 +15,6 @@
     },
     "references": [
         {
-            "path": "../event"
-        },
-        {
             "path": "../polyfill"
         },
         {
@@ -25,6 +22,8 @@
         },
     ],
     "files": [
+        //
+        "../event/index.d.ts",
         //
         "src/global.ts",
         "src/FS.ts",
