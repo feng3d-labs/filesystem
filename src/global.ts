@@ -1,4 +1,6 @@
-namespace feng3d
+export { };
+
+declare global
 {
     export interface MixinsGlobalEvents
     {
