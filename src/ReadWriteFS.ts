@@ -3,6 +3,11 @@ import { IReadWriteFS } from './IReadWriteFS';
 import { pathUtils } from './PathUtils';
 import { ReadFS } from './ReadFS';
 
+export interface ReadWriteFS
+{
+    get fs(): IReadWriteFS;
+}
+
 /**
  * 可读写文件系统
  *
@@ -14,15 +19,6 @@ export class ReadWriteFS extends ReadFS
      * 项目名称（表单名称）
      */
     projectname: string;
-
-    get fs(): IReadWriteFS
-    {
-        return this._fs as any;
-    }
-    set fs(value: IReadWriteFS)
-    {
-        this._fs = value;
-    }
 
     // eslint-disable-next-line @typescript-eslint/no-useless-constructor
     constructor(fs?: IReadWriteFS)
@@ -98,7 +94,9 @@ export class ReadWriteFS extends ReadFS
         let type = fileTypedic[ext];
 
         if (path === 'tsconfig.json' || path === '.vscode/settings.json')
-        { type = 'txt'; }
+        {
+            type = 'txt';
+        }
 
         if (type === 'txt')
         {

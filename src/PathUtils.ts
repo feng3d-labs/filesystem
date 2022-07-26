@@ -10,7 +10,9 @@ export class PathUtils
     normalizeDir(path: string): string
     {
         if (path[path.length - 1] === '/')
-        { path = path.substr(0, path.length - 1); }
+        {
+            path = path.substr(0, path.length - 1);
+        }
 
         return path;
     }
@@ -22,7 +24,9 @@ export class PathUtils
     isHttpURL(path: string): any
     {
         if (path.indexOf('http://') !== -1 || path.indexOf('https://') !== -1 || path.indexOf('file:///') !== -1)
-        { return true; }
+        {
+            return true;
+        }
 
         return false;
     }
@@ -37,7 +41,9 @@ export class PathUtils
         let name = this.basename(path);
 
         if (this.isDirectory(path))
-        { return name; }
+        {
+            return name;
+        }
         name = name.split('.').shift();
 
         return name;
@@ -54,7 +60,9 @@ export class PathUtils
         let name = paths.pop();
 
         if (name === '')
-        { name = paths.pop(); }
+        {
+            name = paths.pop();
+        }
 
         return name;
     }
@@ -84,7 +92,9 @@ export class PathUtils
         const paths = path.split('/');
 
         if (this.isDirectory(path))
-        { paths.pop(); }
+        {
+            paths.pop();
+        }
         paths.pop();
 
         return paths.join('/');
@@ -138,7 +148,9 @@ export class PathUtils
         let length = path.split('/').length;
 
         if (this.isDirectory(path))
-        { length--; }
+        {
+            length--;
+        }
 
         return length - 1;
     }
